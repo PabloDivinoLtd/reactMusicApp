@@ -21,6 +21,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import MainPage from './MainPage'
 import clsx from 'clsx';
 import InstrumentPage from "./InstrumentPage/InstrumentPage";
+import InstrumentCatalog from "./InstrumentCatalog/InstrumentCatalog";
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import StraightenIcon from '@material-ui/icons/Straighten';
 import {Routes} from './routes';
@@ -181,13 +182,14 @@ function App() {
                     <Switch>
                         <Route exact path="/" component={MainPage} />
                         <Route path="/instrument/:id" component={InstrumentPage} />
-                        <Route path="/contacts" component={ContactPage} />
-                        <Route path="/about" component={AboutPage}/>
-                        <Route path="/register" component={RegisterPage}/>
-                        <Route path="/login" component={LoginPage}/>
-                        <Route path="/pay" component={PayPage}/>
-                        <Route path="/service" component={ServicePage}/>
-                        <Route path="/delivery" component={DeliveryPage}/>
+                        <Route exact path="/contacts" component={ContactPage} />
+                        <Route exact path="/about" component={AboutPage}/>
+                        <Route exact path="/register" component={RegisterPage}/>
+                        <Route exact path="/login" component={LoginPage}/>
+                        <Route exact path="/pay" component={PayPage}/>
+                        <Route exact path="/service" component={ServicePage}/>
+                        <Route exact path="/delivery" component={DeliveryPage}/>
+                        <Route path="/:collection" component={InstrumentCatalog}/>
                     </Switch>
 
             </main>

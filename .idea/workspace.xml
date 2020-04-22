@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df7ecb5f-a807-474f-ad24-04e29bf2d0e2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/InstrumentCatalog/InstrumentCatalog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InstrumentPage/InstrumentPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/InstrumentPage/InstrumentPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deliveryPage/deliveryPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/deliveryPage/deliveryPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/payPage/payPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/payPage/payPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +88,9 @@
       <workItem from="1587107498922" duration="3407000" />
       <workItem from="1587121586151" duration="13228000" />
       <workItem from="1587276093238" duration="206000" />
-      <workItem from="1587278778346" duration="2846000" />
+      <workItem from="1587278778346" duration="3405000" />
+      <workItem from="1587549396382" duration="4486000" />
+      <workItem from="1587571395190" duration="5144000" />
     </task>
     <task id="LOCAL-00001" summary="Шаблон страницы + тестовый сервер">
       <created>1585906512756</created>
@@ -152,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587138383719</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Получение текстовых данных из БД">
+      <created>1587281763956</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1587281763956</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,10 +195,10 @@
       <screen x="0" y="0" width="1366" height="735" />
     </state>
     <state x="278" y="13" width="806" height="709" key="#Plugins/0.0.1366.735@0.0.1366.735" timestamp="1586523951526" />
-    <state x="73" y="0" width="1208" height="735" key="CommitChangelistDialog2" timestamp="1587138377697">
+    <state x="73" y="0" width="1208" height="735" key="CommitChangelistDialog2" timestamp="1587281757921">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
-    <state x="73" y="0" width="1208" height="735" key="CommitChangelistDialog2/0.0.1366.735@0.0.1366.735" timestamp="1587138377697" />
+    <state x="73" y="0" width="1208" height="735" key="CommitChangelistDialog2/0.0.1366.735@0.0.1366.735" timestamp="1587281757921" />
     <state x="0" y="117" width="1098" height="615" key="DiffContextDialog" timestamp="1586531402356">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
@@ -190,14 +207,38 @@
       <screen x="0" y="0" width="1366" height="735" />
     </state>
     <state x="466" y="127" width="430" height="481" key="FileChooserDialogImpl/0.0.1366.735@0.0.1366.735" timestamp="1586524622454" />
+    <state width="1345" height="176" key="GridCell.Tab.0.bottom" timestamp="1587554486165">
+      <screen x="0" y="0" width="1366" height="735" />
+    </state>
+    <state width="1345" height="176" key="GridCell.Tab.0.bottom/0.0.1366.735@0.0.1366.735" timestamp="1587554486165" />
+    <state width="1345" height="176" key="GridCell.Tab.0.center" timestamp="1587554486164">
+      <screen x="0" y="0" width="1366" height="735" />
+    </state>
+    <state width="1345" height="176" key="GridCell.Tab.0.center/0.0.1366.735@0.0.1366.735" timestamp="1587554486164" />
+    <state width="1345" height="176" key="GridCell.Tab.0.left" timestamp="1587554486164">
+      <screen x="0" y="0" width="1366" height="735" />
+    </state>
+    <state width="1345" height="176" key="GridCell.Tab.0.left/0.0.1366.735@0.0.1366.735" timestamp="1587554486164" />
+    <state width="1345" height="176" key="GridCell.Tab.0.right" timestamp="1587554486164">
+      <screen x="0" y="0" width="1366" height="735" />
+    </state>
+    <state width="1345" height="176" key="GridCell.Tab.0.right/0.0.1366.735@0.0.1366.735" timestamp="1587554486164" />
     <state x="445" y="75" width="471" height="585" key="RollbackChangesDialog" timestamp="1586536204464">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
     <state x="445" y="75" width="471" height="585" key="RollbackChangesDialog/0.0.1366.735@0.0.1366.735" timestamp="1586536204464" />
-    <state x="295" y="210" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1587138469360">
+    <state x="295" y="210" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1587549721061">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
-    <state x="295" y="210" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1366.735@0.0.1366.735" timestamp="1587138469360" />
+    <state x="295" y="210" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1366.735@0.0.1366.735" timestamp="1587549721061" />
+    <state x="364" y="160" width="633" height="414" key="git4idea.merge.GitPullDialog" timestamp="1587549730257">
+      <screen x="0" y="0" width="1366" height="735" />
+    </state>
+    <state x="364" y="160" width="633" height="414" key="git4idea.merge.GitPullDialog/0.0.1366.735@0.0.1366.735" timestamp="1587549730257" />
+    <state x="344" y="162" key="run.anything.popup" timestamp="1587573273095">
+      <screen x="0" y="0" width="1366" height="735" />
+    </state>
+    <state x="344" y="162" key="run.anything.popup/0.0.1366.735@0.0.1366.735" timestamp="1587573273095" />
     <state x="346" y="56" width="672" height="678" key="search.everywhere.popup" timestamp="1586524001363">
       <screen x="0" y="0" width="1366" height="735" />
     </state>

@@ -9,5 +9,9 @@ export const Routes = {
     Login: '/login',
     Pay: '/pay',
     Service: '/service',
-    Delivery: '/delivery'
+    Delivery: '/delivery',
+    Guitars: '/guitars',
+    BassGuitars: '/bass-guitars',
+    Synths: '/synthesizers',
+    Drums: '/drums',
 }

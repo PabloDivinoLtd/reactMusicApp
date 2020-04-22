@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
-import { faCCPaypal } from "@fortawesome/free-solid-svg-icons";
-import { faCCVisa } from "@fortawesome/free-solid-svg-icons";
-import { faCCMastercard } from "@fortawesome/free-solid-svg-icons";
+import { faCcPaypal, faCcVisa, faCcMastercard } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function PayPage(props) {
@@ -21,9 +19,9 @@ function PayPage(props) {
         </ul>
         <p className="text-center w-75 m-auto"> Для выбора оплаты товара с помощью банковской карты на соответствующей странице необходимо нажать кнопку «Оплата заказа
            банковской картой". Оплата происходит через ПАО СБЕРБАНК с использованием Банковских карт следующих платежных систем: </p> 
-        <p>PayPale <FontAwesomeIcon icon={faCCPaypal} aria-hidden="true" size="3x"/> </p>
-        <p>Visa International <FontAwesomeIcon icon={faCCVisa} aria-hidden="true" size="3x"/></p>
-        <p>Mastercard Worldwide <FontAwesomeIcon icon={faCCMastercard} aria-hidden="true" size="3x"/></p>
+        <p>PayPale <FontAwesomeIcon icon={faCcPaypal} aria-hidden="true" size="3x"/> </p>
+        <p>Visa International <FontAwesomeIcon icon={faCcVisa} aria-hidden="true" size="3x"/></p>
+        <p>Mastercard Worldwide <FontAwesomeIcon icon={faCcMastercard} aria-hidden="true" size="3x"/></p>
         
 
 </div>
