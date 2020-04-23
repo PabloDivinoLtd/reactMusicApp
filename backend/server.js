@@ -2,11 +2,13 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const path = require('path');
+const bodyParser = require("body-parser");
 
 require('dotenv').config();
 
 const app = express();
 const port = process.env.PORT || 5000;
+const urlencodedParser = bodyParser.urlencoded({extended: false});
 
 app.use(cors());
 app.use(express.static(path.join(__dirname, '../public')));
@@ -106,6 +108,13 @@ app.get('/instrument/:id', (req, res) => {
         res.json(result.flatMap(x => x).filter(x => (x!=null))[0])
     })
 })
+
+app.post("/register", urlencodedParser, (request, response) => {
+    if(!request.body) return response.sendStatus(400);
+    console.log(request.body);
+    return response.sendStatus(200);
+    //response.send(`${request.body.userName} - ${request.body.userAge}`);
+});
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
