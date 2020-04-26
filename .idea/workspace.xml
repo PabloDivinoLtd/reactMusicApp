@@ -2,35 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df7ecb5f-a807-474f-ad24-04e29bf2d0e2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/registerPage/RegisterForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/body-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/body-parser/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongodb/lib/core/uri_parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongodb/lib/core/uri_parser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongodb/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongodb/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongoose/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongoose/History.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/cast/number.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/cast/number.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/connection.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/connection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/document.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/document.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/error/cast.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/error/cast.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/helpers/document/compile.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/helpers/document/compile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/helpers/model/castBulkWrite.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/helpers/model/castBulkWrite.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/helpers/populate/assignRawDocsToIdStructure.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/helpers/populate/assignRawDocsToIdStructure.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/helpers/query/castUpdate.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/helpers/query/castUpdate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/helpers/update/applyTimestampsToChildren.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/helpers/update/applyTimestampsToChildren.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/options/PopulateOptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/options/PopulateOptions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/query.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/query.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/queryhelpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/queryhelpers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/schema.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/schema/SingleNestedPath.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/schema/SingleNestedPath.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/schema/array.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/schema/array.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/schema/objectid.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/schema/objectid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/schematype.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/schematype.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/types/embedded.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/types/embedded.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/types/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongoose/lib/types/map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongoose/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongoose/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongodb/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongodb/HISTORY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongodb/lib/collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongodb/lib/collection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongodb/lib/core/cursor.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongodb/lib/core/cursor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongodb/lib/core/sdam/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongodb/lib/core/sdam/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongodb/lib/core/sdam/server_selection.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongodb/lib/core/sdam/server_selection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongodb/lib/core/sessions.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongodb/lib/core/sessions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongodb/lib/cursor.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongodb/lib/cursor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongoose/dist/browser.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongoose/dist/browser.umd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/node_modules/mpath/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mpath/History.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/node_modules/mpath/component.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/node_modules/mpath/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mpath/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/registerPage/registerPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/registerPage/registerPage.js" afterDir="false" />
     </list>
@@ -112,7 +96,8 @@
       <workItem from="1587278778346" duration="3405000" />
       <workItem from="1587549396382" duration="4486000" />
       <workItem from="1587571395190" duration="5834000" />
-      <workItem from="1587660543650" duration="3321000" />
+      <workItem from="1587660543650" duration="3436000" />
+      <workItem from="1587891780811" duration="4249000" />
     </task>
     <task id="LOCAL-00001" summary="Шаблон страницы + тестовый сервер">
       <created>1585906512756</created>
@@ -198,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587579836222</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Обработка формы регистрации">
+      <created>1587664608526</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1587664608526</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,17 +210,18 @@
     <MESSAGE value="Ссылки в боковом меню" />
     <MESSAGE value="Получение текстовых данных из БД" />
     <MESSAGE value="Улучшенное отображение каталогов инструментов" />
-    <option name="LAST_COMMIT_MESSAGE" value="Улучшенное отображение каталогов инструментов" />
+    <MESSAGE value="Обработка формы регистрации" />
+    <option name="LAST_COMMIT_MESSAGE" value="Обработка формы регистрации" />
   </component>
   <component name="WindowStateProjectService">
     <state x="278" y="13" width="806" height="709" key="#Plugins" timestamp="1586523951526">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
     <state x="278" y="13" width="806" height="709" key="#Plugins/0.0.1366.735@0.0.1366.735" timestamp="1586523951526" />
-    <state x="73" y="0" width="1208" height="735" key="CommitChangelistDialog2" timestamp="1587579832994">
+    <state x="73" y="0" width="1208" height="735" key="CommitChangelistDialog2" timestamp="1587664607685">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
-    <state x="73" y="0" width="1208" height="735" key="CommitChangelistDialog2/0.0.1366.735@0.0.1366.735" timestamp="1587579832994" />
+    <state x="73" y="0" width="1208" height="735" key="CommitChangelistDialog2/0.0.1366.735@0.0.1366.735" timestamp="1587664607685" />
     <state x="0" y="117" width="1098" height="615" key="DiffContextDialog" timestamp="1586531402356">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
@@ -257,10 +250,10 @@
       <screen x="0" y="0" width="1366" height="735" />
     </state>
     <state x="445" y="75" width="471" height="585" key="RollbackChangesDialog/0.0.1366.735@0.0.1366.735" timestamp="1587662821427" />
-    <state x="295" y="210" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1587579933826">
+    <state x="295" y="210" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1587664629907">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
-    <state x="295" y="210" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1366.735@0.0.1366.735" timestamp="1587579933826" />
+    <state x="295" y="210" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1366.735@0.0.1366.735" timestamp="1587664629907" />
     <state x="364" y="160" width="633" height="414" key="git4idea.merge.GitPullDialog" timestamp="1587549730257">
       <screen x="0" y="0" width="1366" height="735" />
     </state>

@@ -1,40 +1,31 @@
-import React, {Component} from 'react';
+import React, {useState, useEffect} from 'react';
+import {Redirect} from 'react-router-dom';
+import RegisterForm from "./RegisterForm";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function RegisterPage(props) {
-    return (<div className="col-sm-6 offset-sm-3">
-            <h2>Регистрация</h2>
-            <form action="/register" method="post">
-                <div className="form-group">
-                    <label for="firstName">Имя</label>
-                    <input type="text" name="firstName" className="form-control"/>
-                    <div className="invalid-feedback">
-                    </div>
+    const [isRegistered, setIsRegistered] = useState(null);
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const data = new FormData(e.target);
+        await fetch('/register', {
+            method: 'POST',
+            body: data,
+        }).then(response => response.json()).then(data => {
+            setIsRegistered(data);
+            //console.log(isRegistered);
+        });
+    };
+
+    return (
+        <div>{isRegistered === null ? <RegisterForm handleSubmit={handleSubmit}/> :
+            isRegistered ? (<Redirect to={'/login'}/>) : (
+                <div>
+                    <p className={'text-danger'}>Вы не прошли регистрацию</p>
+                    <RegisterForm handleSubmit={handleSubmit}/>
                 </div>
-                <div className="form-group">
-                    <label for="lastName">Фамилия</label>
-                    <input type="text" name="lastName" className="form-control"/>
-                    <div className="invalid-feedback">
-                    </div>
-                </div>
-                <div className="form-group">
-                    <label for="username">Логин</label>
-                    <input type="text" name="username" className="form-control"/>
-                    <div className="invalid-feedback">
-                    </div>
-                </div>
-                <div className="form-group">
-                    <label for="password">Пароль</label>
-                    <input type="password" name="password" className="form-control"/>
-                    <div className="invalid-feedback">
-                    </div>
-                </div>
-                <div className="form-group">
-                    <input type="submit" value="Регистрация" className="btn btn-warning"/>
-                    <a routerLink="/login" className="btn link-warning">Войти</a>
-                </div>
-            </form>
-        </div>
+            )}</div>
+
     );
 }
 

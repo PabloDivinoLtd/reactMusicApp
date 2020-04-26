@@ -109,10 +109,10 @@ app.get('/instrument/:id', (req, res) => {
     })
 })
 
-app.post("/register", urlencodedParser, (request, response) => {
-    if(!request.body) return response.sendStatus(400);
-    console.log(request.body);
-    return response.sendStatus(200);
+app.post("/register", urlencodedParser, (req, res) => {
+    console.log(req.body);
+    if(!req.body) return res.status(400).send(false);
+    else return res.status(200).send(true);
     //response.send(`${request.body.userName} - ${request.body.userAge}`);
 });
 
