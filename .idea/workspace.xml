@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df7ecb5f-a807-474f-ad24-04e29bf2d0e2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/registerPage/RegisterForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongodb/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongodb/HISTORY.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongodb/lib/collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongodb/lib/collection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongodb/lib/core/cursor.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongodb/lib/core/cursor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongodb/lib/core/sdam/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongodb/lib/core/sdam/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongodb/lib/core/sdam/server_selection.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongodb/lib/core/sdam/server_selection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongodb/lib/core/sessions.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongodb/lib/core/sessions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongodb/lib/cursor.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongodb/lib/cursor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mongoose/dist/browser.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mongoose/dist/browser.umd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mpath/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mpath/History.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mpath/component.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/mpath/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/mpath/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/registerPage/registerPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/registerPage/registerPage.js" afterDir="false" />
     </list>
@@ -97,7 +86,7 @@
       <workItem from="1587549396382" duration="4486000" />
       <workItem from="1587571395190" duration="5834000" />
       <workItem from="1587660543650" duration="3436000" />
-      <workItem from="1587891780811" duration="4249000" />
+      <workItem from="1587891780811" duration="12421000" />
     </task>
     <task id="LOCAL-00001" summary="Шаблон страницы + тестовый сервер">
       <created>1585906512756</created>
@@ -190,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587664608526</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Обработка формы регистрации - исправления и дополнения">
+      <created>1587896598915</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1587896598915</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,17 +207,18 @@
     <MESSAGE value="Получение текстовых данных из БД" />
     <MESSAGE value="Улучшенное отображение каталогов инструментов" />
     <MESSAGE value="Обработка формы регистрации" />
-    <option name="LAST_COMMIT_MESSAGE" value="Обработка формы регистрации" />
+    <MESSAGE value="Обработка формы регистрации - исправления и дополнения" />
+    <option name="LAST_COMMIT_MESSAGE" value="Обработка формы регистрации - исправления и дополнения" />
   </component>
   <component name="WindowStateProjectService">
     <state x="278" y="13" width="806" height="709" key="#Plugins" timestamp="1586523951526">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
     <state x="278" y="13" width="806" height="709" key="#Plugins/0.0.1366.735@0.0.1366.735" timestamp="1586523951526" />
-    <state x="73" y="0" width="1208" height="735" key="CommitChangelistDialog2" timestamp="1587664607685">
+    <state x="73" y="0" width="1208" height="735" key="CommitChangelistDialog2" timestamp="1587896593595">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
-    <state x="73" y="0" width="1208" height="735" key="CommitChangelistDialog2/0.0.1366.735@0.0.1366.735" timestamp="1587664607685" />
+    <state x="73" y="0" width="1208" height="735" key="CommitChangelistDialog2/0.0.1366.735@0.0.1366.735" timestamp="1587896593595" />
     <state x="0" y="117" width="1098" height="615" key="DiffContextDialog" timestamp="1586531402356">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
@@ -250,10 +247,10 @@
       <screen x="0" y="0" width="1366" height="735" />
     </state>
     <state x="445" y="75" width="471" height="585" key="RollbackChangesDialog/0.0.1366.735@0.0.1366.735" timestamp="1587662821427" />
-    <state x="295" y="210" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1587664629907">
+    <state x="295" y="210" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1587896632073">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
-    <state x="295" y="210" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1366.735@0.0.1366.735" timestamp="1587664629907" />
+    <state x="295" y="210" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1366.735@0.0.1366.735" timestamp="1587896632073" />
     <state x="364" y="160" width="633" height="414" key="git4idea.merge.GitPullDialog" timestamp="1587549730257">
       <screen x="0" y="0" width="1366" height="735" />
     </state>

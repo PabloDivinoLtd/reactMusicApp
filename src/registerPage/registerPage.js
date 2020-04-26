@@ -19,7 +19,7 @@ function RegisterPage(props) {
 
     return (
         <div>{isRegistered === null ? <RegisterForm handleSubmit={handleSubmit}/> :
-            isRegistered ? (<Redirect to={'/login'}/>) : (
+            isRegistered ? (<Redirect from={'/register'} to={'/login'}/>) : (
                 <div>
                     <p className={'text-danger'}>Вы не прошли регистрацию</p>
                     <RegisterForm handleSubmit={handleSubmit}/>

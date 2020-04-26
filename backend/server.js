@@ -14,14 +14,20 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, '../public')));
 
 const uri = process.env.ATLAS_URI;
-mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true,useUnifiedTopology: true }
-);
+const usersUri = process.env.USERS_URI;
 
-const connection = mongoose.connection;
+//Первый Connection к инструментам
+mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true,useUnifiedTopology: true });
+//Второй - к пользователям
+const userConn = mongoose.createConnection(usersUri, { useNewUrlParser: true, useCreateIndex: true,useUnifiedTopology: true });
 
-connection.once('open', () => {
+const connections = mongoose.connections;
+const connection = connections[0];
+const userconnection = connections[1];
+
+connections[0].once('open', () => {
   console.log("MongoDB database connection established successfully");
-  console.log("Collections: ", Object.keys(connection.collections))
+  //console.log("Collections: ", Object.keys(connections[0].collections), " \n", Object.keys(connections[1].collections))
 });
 
 const instrumentScheme = new mongoose.Schema({
@@ -38,21 +44,30 @@ const bassGuitarScheme = instrumentScheme.clone().set('collection', 'bass-guitar
 const drumScheme = instrumentScheme.clone().set('collection', 'drums');
 const synthScheme = instrumentScheme.clone().set('collection', 'synthesizers');
 
-const Guitar = mongoose.model("Guitar", guitarScheme);
-const Drum = mongoose.model("Drum", drumScheme);
-const BassGuitar = mongoose.model("BassGuitar", bassGuitarScheme);
-const Synthesizer = mongoose.model("Synthesizer", synthScheme);
-const Instrument = mongoose.model("Instrument", instrumentScheme);
+const Guitar = connection.model("Guitar", guitarScheme);
+const Drum = connection.model("Drum", drumScheme);
+const BassGuitar = connection.model("BassGuitar", bassGuitarScheme);
+const Synthesizer = connection.model("Synthesizer", synthScheme);
+const Instrument = connection.model("Instrument", instrumentScheme);
 
 const errorInstrument = {_id:-1, species: 'Ошибка', name: 'Ошибка', description: 'Ошибка', price: 0, image: null};
 
+const userSchema = new mongoose.Schema({
+    _id: mongoose.Schema.Types.ObjectID,
+    name: String,
+    surname: String,
+    login: String,
+    password: String,
+    goods: Array
+}, { versionKey: false });
+
+const User = userconnection.model("User", userSchema);
+
 app.get('/', (req, res)=>{
-    res.send('Hello');
     console.log("Main page");
 });
 
 app.get('/guitars', (req, res)=>{
-    console.log("Guitars");
     Guitar.find({}, (err, docs) => {
         if (err) res.json(errorInstrument);
         else {
@@ -62,7 +77,6 @@ app.get('/guitars', (req, res)=>{
 });
 
 app.get('/bass-guitars', (req, res)=>{
-    console.log("Bass-Guitars");
     BassGuitar.find({}, (err, docs) => {
         if (err) res.json(errorInstrument);
         else {
@@ -72,7 +86,6 @@ app.get('/bass-guitars', (req, res)=>{
 });
 
 app.get('/drums', (req, res)=>{
-    console.log("Drums");
     Drum.find({}, (err, docs) => {
         if (err) res.json(errorInstrument);
         else {
@@ -82,7 +95,6 @@ app.get('/drums', (req, res)=>{
 });
 
 app.get('/synthesizers', (req, res)=>{
-    console.log("Synthesizers");
     Synthesizer.find({}, (err, docs) => {
         if (err) res.json(errorInstrument);
         else {
@@ -94,23 +106,21 @@ app.get('/synthesizers', (req, res)=>{
 app.get('/instr', (req, res) => {
     Promise.all(Object.keys(connection.collections).map(col =>
             mongoose.model(col, instrumentScheme.set('collection', col)).find())
-    ).then(result=>res.json(result.flatMap(x => x)))
-
-    console.log("Instruments");
+    ).then(result=>res.json(result.flatMap(x => x)));
 });
 
 app.get('/instrument/:id', (req, res) => {
-    console.log(`Instrument id:${req.params.id}`)
-
+    console.log(req.params.id)
     Promise.all(Object.keys(connection.collections).map(col =>
         mongoose.model(col, instrumentScheme.set('collection', col)).findById(req.params.id))
     ).then(result=>{
-        res.json(result.flatMap(x => x).filter(x => (x!=null))[0])
+        {
+            res.json(result.flatMap(x => x).filter(x => (x!=null))[0])
+        }
     })
 })
 
 app.post("/register", urlencodedParser, (req, res) => {
-    console.log(req.body);
     if(!req.body) return res.status(400).send(false);
     else return res.status(200).send(true);
     //response.send(`${request.body.userName} - ${request.body.userAge}`);
